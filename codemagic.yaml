@@ -2,12 +2,6 @@ workflows:
   android-minimal:
     name: "Build IngenieroLauncher APK"
     max_build_duration: 60
-    environment:
-      flutter: false
-      android:
-        build_tools_version: "34.0.0"
-        gradle_version: "8.1.1"
-        jdk: "17"
     scripts:
       - name: "Build APK"
         script: ./gradlew assembleRelease
